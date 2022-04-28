@@ -7,9 +7,7 @@
       </title>
       </head>
       <body background="https://ecotour.com.vn/wp-content/uploads/2020/05/ch%E1%BB%A3-%C4%91%C3%AAm-nha-trang.jpg">
-        <background-size: 150px>
         <h3 align="center">
-          <font> <face="lato"size="15">Thiên Hoàng</font>
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
