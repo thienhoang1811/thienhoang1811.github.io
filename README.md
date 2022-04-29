@@ -2,8 +2,8 @@
     <html lang="en">
     <head>
         <meta charset="utf-8">
-      <title>Trang Web của tôi</title>
-      </head>
+     <title>Trang Web của tôi</title>
+    </head>
       <body background="https://ecotour.com.vn/wp-content/uploads/2020/05/ch%E1%BB%A3-%C4%91%C3%AAm-nha-trang.jpg">
         <h3 align="center">
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
