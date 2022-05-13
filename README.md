@@ -4,7 +4,7 @@
       <title></title>
       <style>
         body{
-          background-image:url("http://boxthuthuat.com/wp-content/uploads/2020/12/moraine-lake-2560x1440-banff-canada-mountains-forest-4k-15563.jpg");
+          background-image:url("https://bloghay.vn/wp-content/uploads/2021/10/Wallpaper-4k-Hi%CC%80nh-ne%CC%82%CC%80n-4k-con-du%CC%9Bo%CC%9B%CC%80ng-da%CC%82%CC%80y-tuye%CC%82%CC%81t-de%CC%A3p-scaled.jpg");
           background-color:cover;
         }
         .bg {
