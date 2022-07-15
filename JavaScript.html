@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            section {
+                display: flex;
+                justify-content: center;
+                height: 100%;
+            }
+            .container {
+                display: flex;
+                width: 20rem;
+                height: 20rem;
+                margin: auto;
+                background: url(https://anhdepblog.com/wp-content/uploads/2018/07/hinh-nen-iphone-x-1.jpg);
+            }
+            .input-data {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                padding: 2em;
+            }
+            input[type="submit"],
+            input[type="reset"] {
+                width: 5rem;
+                padding: .6em 0;
+            }
+            form > *,
+            content > * {
+                padding-bottom: 1em;
+            }
+            .flex {
+                display: flex;
+            }
+            .conduct > * {
+                padding-left: 1em;
+            }
+            .button {
+                padding: 0;
+            }
+            .output-data {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                background: 
+            }
+            .content > * {
+                padding-left: 2em;
+                padding-bottom: 1em;
+            }
+            @media (max-width: 60rem) {
+                .container {
+                    flex-direction: column;
+                }
+                .content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 15rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="container">
+                <div class="input-data">
+                    <form id="user-detail">
+
+                        <div class="math">
+                            <label for="math">Toán:</label>
+                            <input type="number" id="user-math">
+                        </div>
+                        <div class="verse">
+                            <label for="verse">Văn:</label>
+                            <input type="number" id="user-verse">
+                        </div>
+
+                        <label for="conduct">hạnh kiểm:</label>
+                        <div class="flex conduct">
+                            <div class="dat">
+                                <input type="radio" name="conduct" value="dat" id="user-conduct">
+                                <label for="conduct">Đạt</label>
+</div>
+                            <div class="kodat">
+                                <input type="radio" name="conduct" value="kodat" id="user-conduct">
+                                <label for="conduct">Không Đạt</label>
+                            </div>
+                      </div>
+
+                        <div class="button">
+                            <input type="submit" value="Kiểm tra" id="submit">
+                            <input type="reset" value="Hủy">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="output-data">
+                    
+                </div>
+
+            </div>
+        </section>
+        
+    <script>
+        const form = document.getElementById('user-detail').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const math = document.getElementById('user-math').value;
+       
+            const verse = document.getElementById('user-verse').value;
+          
+            const diemtrungbinh = (Number(math) + Number(verse)) / 2;
+            console.log(diemtrungbinh)
+          
+            const conduct = document.getElementsByName('conduct');
+            conduct.forEach(conduct => {
+                if (conduct.checked == true) {
+                  if(conduct.value == 'dat' && diemtrungbinh >= 5) {
+                  document.querySelector('.output-data').textContent = 'Lên lớp';
+                  }else{
+                  document.querySelector('.output-data').textContent = 'Ở lại lớp';
+                  }
+                };
+            });
+        });
+    </script>
+    </body>
+</html>
